@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja" xml:lang="ja" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Currency Converter</title>
+  <meta name="description" content="description">
+  <meta name="keywords" content="keywords">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+  <link rel="stylesheet" href="assets/icon/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/style.min.css?v=1.2.0">
+</head>
+
+<body>
+
+  <div id="page" class="site l">
+    <header id="masthead" class="site-header l-hd">
+      <div class="l-hd-inn">
+        <nav class="l-hd-inn-nav d-fl">
+          <div class="l-hd-inn-nav-logo">
+            <h1>
+              <a href="#" rel="canonical">
+                CURRENCY CONVERTER
+              </a>
+            </h1>
+          </div>
+          <div class="l-hd-inn-nav-desc pc">
+            <h2>Support for converting to MMK</h2>
+          </div>
+        </nav>
+      </div>
+    </header><!-- #masthead -->
+    <div id="content" class="site-content">
+      <div id="primary" class="content-area">
+        <main id="main" class="site-main">
+          <div id="mv" class="l-mv">
+            <div class="l-mv-inn">
+              <div class="l-mv-inn-content">
+                <div class="l-mv-inn-content-ttl">
+                  <h3>CONVERT YOR CURRENCY TO MYANMAR(KYAT)</h3>
+                </div>
+                <div class="l-mv-inn-content-data">
+                  <div class="inst-field">
+                    <h3 class="data-ttl">Select quick convert (From <span class="icon"><i class="fa-solid fa-arrow-right-arrow-left fa-lg"></i></span> To)</h3>
+                    <ul class="sl-option">
+                      <li class="active">
+                        <span class="cur" data-value="1">USD</span>
+                        <span class="icon"><i class="fa-solid fa-arrow-right-arrow-left fa-lg"></i></span>
+                        <span class="cur">MMK</span>
+                      </li>
+                      <li>
+                        <span class="cur" data-value="2">JPY</span>
+                        <span class="icon"><i class="fa-solid fa-arrow-right-arrow-left fa-lg"></i></span>
+                        <span class="cur">MMK</span>
+                      </li>
+                      <li>
+                        <span class="cur" data-value="3">SGD</span>
+                        <span class="icon"><i class="fa-solid fa-arrow-right-arrow-left fa-lg"></i></span>
+                        <span class="cur">MMK</span>
+                      </li>
+                      <li>
+                        <span class="cur" data-value="4">EUR</span>
+                        <span class="icon"><i class="fa-solid fa-arrow-right-arrow-left fa-lg"></i></span>
+                        <span class="cur">MMK</span>
+                      </li>
+                      <li>
+                        <span class="cur" data-value="0">Custom</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="cus-field disable">
+                    <h3 class="data-ttl">Please select your currency</h3>
+                    <div class="cus-field-sl d-fl">
+                      <select id="cars" class="cus-cur" name="cus-cur" disabled>
+                        <option value="">Select your Currency</option>
+                        <option value="usd">USD</option>
+                        <option value="jpy">JPY</option>
+                        <option value="sgd">SGD</option>
+                      </select>
+                      <span class="icon"><i class="fa-solid fa-arrow-right-arrow-left fa-2x"></i></span>
+                      <div class="cus-cur">
+                        <p>MMK</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user-input">
+                    <div class="user-input-ttl d-fl">
+                      <h3 class="data-ttl">Enter the ammount</h3>
+                      <h3 class="data-ttl pc">Result</h3>
+                    </div>
+                    <div class="result d-fl">
+                      <div class="result-calarea d-fl">
+                        <input type="number">
+                        <input type="submit" value="CONVERT">
+                      </div>
+                      <div class="result-data">
+                        <h3 class="res-ttl sp">Result</h3>
+                        <h1>0.0</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main><!-- #main -->
+      </div><!-- #primary -->
+    </div><!-- #content -->
+    <footer id="footer" class="site-footer l-ft">
+      <div class="l-ft-inn">
+        <div class="l-ft-inn-content">
+          <h2>Have a Good Day to Everyone!</h2>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="assets/icon/fontawesome/js/all.min.js"></script>
+  <script src="js/src/common.js"></script>
+
+</body>
+
+</html>

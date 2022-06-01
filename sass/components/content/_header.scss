@@ -1,0 +1,31 @@
+.l {
+    &-hd {
+        &-inn {
+            &-nav {
+                padding: 10px 5%;
+                background-color: $color_primary;
+                justify-content: space-between;
+                align-items: center;
+                &-logo {
+                    h1 {
+                        a {
+                            font-size: 28px;
+                            font-weight: 700;
+                            color: $text_light;
+                            @include mqSp {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+                &-desc {
+                    h2 {
+                        font-size: 18px;
+                        color: $color_secondary;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

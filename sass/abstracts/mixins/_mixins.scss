@@ -1,0 +1,14 @@
+@mixin createCol($cols, $marginX, $marginY) {
+  $marginx: (($cols - 1) * $marginX);
+  width: calc((100% - #{$marginx}) / #{$cols});
+  margin-right: $marginX;
+  &:nth-child(#{$cols}n) {
+    margin-right: 0px;
+  }
+  &:nth-child(n + #{$cols}) {
+    margin-top: $marginY;
+  }
+  &:nth-child(-n + #{$cols}) {
+    margin-top: 0px;
+  }
+}

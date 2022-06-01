@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-variant-ligatures: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+a,a:hover {
+    text-decoration: none;
+    color: #231815;
+    transition: 0.5s;
+}
+
+img {
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+}
+
+.d-fl {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.sp{
+    display: none;
+    @include mqSp{
+        display: block;
+    }
+}
+
+.pc{
+    display: block;
+    @include mqSp{
+        display:none;
+    }
+}
+
+/// Variable for colors
+$color_primary: #001c40;
+$color_secondary: #fab005;
+$text_primary: #001c40;
+$text_light: #fff;
+$text_link: #74c0fc;
