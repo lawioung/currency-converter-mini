@@ -48,6 +48,10 @@
                     .inst-field {
                         margin-bottom: 30px;
                         h3 {
+                            .colr {
+                                color: $color_secondary;
+                                font-weight: 700;
+                            }
                             .icon {
                                 font-size: 10px;
                                 vertical-align: middle;
@@ -67,6 +71,7 @@
                                 display: flex;
                                 justify-content: space-evenly;
                                 align-items: center;
+                                cursor: pointer;
                                 @include mqSp {
                                     width: 48%;
                                 }
@@ -87,6 +92,9 @@
                                     .cur {
                                         color: $text_primary;
                                         font-weight: 700;
+                                        &:last-child {
+                                            color: $color_secondary;
+                                        }
                                     }
                                     .icon {
                                         color: $text_primary;
@@ -114,12 +122,13 @@
                             }
                             .cus-cur {
                                 width: 25%;
-                                border: 1px solid $color_primary;
+                                border: 2px solid $color_primary;
                                 font-size: 16px;
                                 padding: 10px;
                                 text-align: center;
-                                font-weight: 500;
+                                font-weight: 700;
                                 border-radius: 5px;
+                                cursor: pointer;
                                 @include mqSp {
                                     width: 100%;
                                     font-size: 14px;
@@ -127,6 +136,9 @@
                                 p {
                                     font-size: 16px;
                                     font-weight: 700;
+                                }
+                                &:last-child {
+                                    color: $color_secondary;
                                 }
                             }
                         }
@@ -137,16 +149,25 @@
                             .cus-cur {
                                 color: #C4C4C4;
                                 border-color: #C4C4C4;
+                                font-weight: 500;
                                 cursor: not-allowed;
                             }
                             .icon {
                                 color: #C4C4C4;
+                            }
+                            p {
+                                font-weight: 500;
                             }
                         }
                     }
                     .user-input {
                         &-ttl {
                             justify-content: space-between;
+                            h3 {
+                                &:last-child {
+                                    color: $color_secondary;
+                                }
+                            }
                         }
                         .result {
                             justify-content: space-between;
@@ -154,7 +175,7 @@
                                 flex-direction: column;
                             }
                             &-calarea {
-                                width: 70%;
+                                width: 60%;
                                 gap: 15px 25px;
                                 align-items: flex-end;
                                 @include mqSp {
@@ -165,8 +186,8 @@
                                     margin-bottom: 20px;
                                 }
                                 input {
-                                    width: 35.72%;
-                                    border: 1px solid $color_primary;
+                                    width: 41.7%;
+                                    border: 2px solid $color_primary;
                                     font-size: 16px;
                                     padding: 10px;
                                     text-align: right;
@@ -188,14 +209,18 @@
                                 }
                             }
                             &-data {
+                                flex: 1 0 0;
+                                flex-wrap: nowrap;
                                 .res-ttl {
                                     font-size: 18px;
                                     font-weight: 700;
                                 }
                                 h1 {
-                                    font-size: 50px;
+                                    font-size: 40px;
                                     font-weight: 700;
                                     text-align: right;
+                                    // color: $color_secondary;
+                                    text-shadow: 0.5px 1px 1px $color_secondary;
                                 }
                             }
                         }

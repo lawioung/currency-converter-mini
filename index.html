@@ -52,9 +52,9 @@
                 </div>
                 <div class="l-mv-inn-content-data">
                   <div class="inst-field">
-                    <h3 class="data-ttl">Select quick convert (From <span class="icon"><i class="fa-solid fa-arrow-right-arrow-left fa-lg"></i></span> To)</h3>
+                    <h3 class="data-ttl">Select quick convert <span class="colr">(From <span class="icon"><i class="fa-solid fa-arrow-right-arrow-left fa-lg"></i></span> To)</span></h3>
                     <ul class="sl-option">
-                      <li class="active">
+                      <li class="active" value="">
                         <span class="cur" data-value="1">USD</span>
                         <span class="icon"><i class="fa-solid fa-arrow-right-arrow-left fa-lg"></i></span>
                         <span class="cur">MMK</span>
@@ -74,7 +74,7 @@
                         <span class="icon"><i class="fa-solid fa-arrow-right-arrow-left fa-lg"></i></span>
                         <span class="cur">MMK</span>
                       </li>
-                      <li>
+                      <li class="cus">
                         <span class="cur" data-value="0">Custom</span>
                       </li>
                     </ul>
@@ -82,11 +82,8 @@
                   <div class="cus-field disable">
                     <h3 class="data-ttl">Please select your currency</h3>
                     <div class="cus-field-sl d-fl">
-                      <select id="cars" class="cus-cur" name="cus-cur" disabled>
-                        <option value="">Select your Currency</option>
-                        <option value="usd">USD</option>
-                        <option value="jpy">JPY</option>
-                        <option value="sgd">SGD</option>
+                      <select id="cusSelect" class="cus-cur" name="cus-cur" disabled>
+                        <option value="">Select Currency</option>
                       </select>
                       <span class="icon"><i class="fa-solid fa-arrow-right-arrow-left fa-2x"></i></span>
                       <div class="cus-cur">
@@ -97,16 +94,16 @@
                   <div class="user-input">
                     <div class="user-input-ttl d-fl">
                       <h3 class="data-ttl">Enter the ammount</h3>
-                      <h3 class="data-ttl pc">Result</h3>
+                      <h3 class="data-ttl pc">Result in Myanmar(Kyat)</h3>
                     </div>
                     <div class="result d-fl">
                       <div class="result-calarea d-fl">
-                        <input type="number">
-                        <input type="submit" value="CONVERT">
+                        <input type="number" id="input" placeholder="0.0" autofocus>
+                        <input type="submit" id="calc" value="CONVERT">
                       </div>
                       <div class="result-data">
                         <h3 class="res-ttl sp">Result</h3>
-                        <h1>0.0</h1>
+                        <h1 id="result">0.0</h1>
                       </div>
                     </div>
                   </div>
@@ -130,6 +127,7 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="assets/icon/fontawesome/js/all.min.js"></script>
+  <script src="js/src/cur-data.js"></script>
   <script src="js/src/common.js"></script>
 
 </body>
